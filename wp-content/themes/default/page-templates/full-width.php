@@ -1,18 +1,9 @@
-<?php
-/**
- * Template Name: Full Width Page
- *
- * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
- */
-
-get_header(); ?>
+<?php get_header(); ?>
 
 <div id="main-content" class="main-content">
 
 <?php
-	if ( is_front_page() && twentyfourteen_has_featured_posts() ) {
+	if ( is_front_page() && webidom_has_featured_posts() ) {
 		// Include the featured content template.
 		get_template_part( 'featured-content' );
 	}
